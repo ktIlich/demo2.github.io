@@ -1,0 +1,498 @@
+@import "_fonts.scss";
+
+/* colors */
+
+$green_btn:#4edadd;
+$purple_light:#b39edc;
+
+
+
+html {
+  font-size: 10px;
+}
+
+.green-btn {
+  font-family: 'Sintony', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), $green_btn;
+  border: none;
+  font-size: 1.6rem;
+  box-shadow: 0px 1px 1px 0px #32abae;
+  transition: all 0.2s;
+  &:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), darken($green_btn, 15%);
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.purple-btn {
+  font-family: 'Sintony', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: none;
+  font-size: 1.6rem;
+  box-shadow: 0px 1px 0px 0px #ffffff;
+  transition: all 0.2s;
+  &:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), darken($purple_light, 15%);
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.transparent-btn {
+  font-family: 'Sintony', sans-serif;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 2px solid #e7eaf1;
+  font-size: 1.6rem;
+  box-shadow: 0px 1px 0px 0px #ffffff;
+  background-color: transparent;
+  transition: all 0.2s;
+  &:hover{
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+
+.main {
+  background: linear-gradient(to bottom, rgba(159, 136, 202, 1.0), rgba(159, 137, 203, 0.75)), url(../img/main/main-bg.png) center center no-repeat;
+  background-size: cover;
+  padding-top: 3rem;
+  &-title {
+    font-family: 'Sintony', sans-serif;
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 5.5rem;
+    color: #fff;
+  }
+  &-subtitle {
+    font-family: 'Sintony', sans-serif;
+    text-align: center;
+    color: #e2d9f3;
+    font-size: 1.9rem;
+    margin-bottom: 2.7rem;
+  }
+  &-link {
+    text-align: center;
+    color: #dacaf3;
+    font-family: 'Montserrat';
+    font-size: 1.4rem;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    &-text {
+      padding: 0.5rem 0;
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 2px solid #fff;
+      }
+    }
+  }
+  &-img {
+    position: relative;
+    margin-bottom: 0;
+    img{
+      width: 100%;
+    }
+  }
+  &-btn {
+    margin-bottom: 5rem;
+  }
+}
+
+.caption {
+  &-left {
+    line-height: 1;
+    text-align: left;
+    position: absolute;
+    color: #fff;
+    font-family: 'Sintony', sans-serif;
+    font-size: 1.6rem;
+    bottom: 3%;
+    left: 7%;
+    &_data {
+      text-align: left;
+      color: #f3f3f3;
+      font-size: 0.9rem;
+    }
+  }
+  &-like {
+    position: absolute;
+    color: #fff;
+    font-size: 1.8rem;
+    bottom: 5%;
+    right: 7%;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  &-btn {
+    position: absolute;
+    width: 5.6rem;
+    height: 5.6rem;
+    padding: 1.5rem;
+    top: 4%;
+    right: 4%;
+    outline: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.creative {
+  padding-top: 3rem;
+  &-btn {
+    &_p {
+      margin-right: 1rem;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), $purple_light;
+    }
+    &_t {
+      margin-left: 1rem;
+      color: #b1bad0;
+      &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), darken($purple_light, 15%);
+        color: #fff;
+      }
+    }
+  }
+  &-title {
+    margin-top: 4rem;
+    color: #a3adb5;
+    font-family: 'Sintony', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  &-subtitle {
+    color: #a3adb5;
+    font-family: 'Sintony', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+}
+
+.work {
+  background: url(../img/work/bg.png) center no-repeat;
+  background-size: cover;
+  padding-top: 8rem;
+  position: relative;
+  overflow: hidden;
+  &-title {
+    font-size: 3.5rem;
+    font-family: 'Sintony', sans-serif;
+    color: #a3adb5;
+  }
+  &-subtitle {
+    font-size: 1.6rem;
+    font-family: 'Montserrat';
+    color: #abb4bb;
+  }
+  &-btn {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), $purple_light;
+    margin-left: 15px;
+    margin-top: 1rem;
+    margin-bottom: 25rem;
+  }
+  &-img {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-40%);
+    bottom: -80%;
+    img {
+      width: 90%;
+    }
+  }
+}
+
+.target {
+  background: #9a81c7 url(../img/target/target-bg.png) center no-repeat;
+  background-size: cover;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  &-title {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 3.5rem;
+  }
+  &-subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 3rem;
+  }
+  &-btn {
+    text-transform: uppercase;
+    color: #fff;
+    &_g {
+      margin-right: 1rem;
+    }
+    &_t {
+      margin-left: 1rem;
+      &:hover {
+        background: lighten(#9a81c7, 5%);
+      }
+    }
+  }
+}
+
+
+.icons {
+  background: #f6f6f4 url(../img/icons/icons-bg.png);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  &-item {
+    text-align: center;
+    &_icon {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      font-size: 4.5rem;
+      color: #9880c5;
+    }
+  }
+  &-title {
+    font-family: 'Sintony', sans-serif;
+    font-size: 3rem;
+    color: #a3adb5;
+    margin-top: 1rem;
+  }
+  &-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #abb4bb;
+    margin-top: 1rem;
+  }
+  a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #977dc5;
+  }
+}
+
+.subscript {
+  padding-top: 7rem;
+  padding-bottom: 9rem;
+  &-title {
+    font-family: 'Sintony', sans-serif;
+    text-align: center;
+    font-size: 3.5rem;
+    color: #8e75bd;
+  }
+  &-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #8e75bd;
+    margin-bottom: 3rem;
+  }
+  .wrap {
+    text-align: center;
+    padding: 0 5.5rem;
+  }
+  &-item {
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid #e7eaf1;
+    padding: 0;
+    min-height: 57rem;
+    &:hover {
+      box-shadow: 0px 0px 23px 0px #E1D9EF;
+    }
+    &_r {
+      left: 2rem;
+      .subscript-btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 2rem;
+      }
+    }
+    &_l {
+      left: -2rem;
+      .subscript-btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 2rem;
+      }
+    }
+    &_header {
+      display: block;
+      font-family: 'Sintony', sans-serif;
+      text-transform: uppercase;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      padding: 1rem;
+      width: 100%;
+      font-size: 2rem;
+      color: #fff;
+      text-align: center;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), #9178c1;
+    }
+    &_info {
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      font-size: 1.6rem;
+      color: #8c8c8c;
+      margin-top: 2rem;
+    }
+    &_cost {
+      font-family: 'Sintony', sans-serif;
+      font-size: 4rem;
+      font-weight: 700;
+      color: #44c5c7;
+      &info {
+        font-family: 'Sintony', sans-serif;
+        font-size: 1.8rem;
+        color: #b7bfc5;
+      }
+    }
+    &_dopinfo {
+      margin-top: 1rem;
+      padding-top: 0.5rem;
+      line-height: 3rem;
+      font-family: 'Montserrat', sans-serif;
+      color: #b7bfc5;
+      font-size: 1.5rem;
+      border-top: 2px solid #e7eaf1;
+    }
+  }
+  &-btn {
+    font-size: 1.6rem;
+    color: #967dc4;
+    border: 2px solid #9980c7;
+    width: 65%;
+    transition: all 0.2s;
+    &:hover {
+      color: #fff;
+      background-color: #947cc3;
+      box-shadow: 0px 0px 23px 0px #E1D9EF;
+    }
+  }
+  &-value {
+    font-family: 'Sintony', sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5rem;
+    p {
+      font-size: 1.8rem;
+      color: #9ca0ab;
+    }
+    span {
+      font-size: 2.1rem;
+      color: #947cc3;
+    }
+  }
+}
+
+.ipad {
+  position: relative;
+  &-base {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    background: #f4f3f3;
+    bottom: 150px;
+  }
+  &-img {
+    background: url(../img/ipad/ipad-bg.png) center center no-repeat, #8f76bf;
+    background-size: cover;
+    height: 800px;
+    margin-bottom: 250px;
+    img {
+      z-index: 20;
+      bottom: 230px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+    }
+  }
+  &-wrap {
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    background: #8f76bf;
+  }
+  &-btn {
+    width: 20rem;
+    margin-top: 60px;
+  }
+}
+
+.footer {
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+  &-item {
+    margin-bottom: 1rem;
+    h2 {
+      text-align: center;
+      font-family: 'Sintony', sans-serif;
+      font-size: 2rem;
+      color: #b7bfc5;
+    }
+  }
+  &-link {
+    text-align: center;
+    display: block;
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #b7bfc5;
+    font-size: 1.4rem;
+  }
+  img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.up {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  right: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 0.7;
+  border: none;
+  background-color: rgba(108, 110, 113, 0.5);
+  color: #fff;
+  z-index: 30;
+  &:focus{
+    outline: none;
+  }
+}
+
+
+@import "_media.scss";

@@ -1,0 +1,276 @@
+@media (max-width:1366px) {
+  .work {
+    &-img {
+      bottom: -60%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width:1199px) {
+  .main-title {
+    margin-top: 3rem;
+  }
+  .creative {
+    &-title {
+      font-size: 3rem;
+    }
+    &-subtitle {
+      font-size: 1.6rem;
+      margin-bottom: 5rem;
+    }
+  }
+  .work {
+    &-title {
+      font-size: 3rem;
+    }
+    &-subtitle {
+      font-size: 1.5rem;
+    }
+    &-img {
+      bottom: -40%;
+    }
+  }
+
+  .target {
+    &-title {
+      font-size: 3rem;
+    }
+    &-subtitle {
+      font-size: 1.4rem;
+    }
+  }
+
+  .icons {
+    padding: 3rem 0;
+    &-title {
+      font-size: 2.5rem;
+    }
+    &-subtitle,
+    a {
+      font-size: 1.3rem;
+    }
+  }
+
+  .subscript {
+    &-title {
+      font-size: 3rem;
+    }
+    &-subtitle {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media (max-width:991px) {
+  .main {
+    &-link {
+      text-align: right;
+    }
+  }
+
+  .work {
+    padding-top: 3rem;
+    &-btn {
+      margin-left: 33.3333333%;
+      margin-bottom: 3rem;
+    }
+    &-img {
+      display: none;
+    }
+  }
+
+  .icons {
+    &-item {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .ipad {
+    &-base {
+      bottom: 100px;
+      height: 130px;
+    }
+    &-img {
+      height: 650px;
+      margin-bottom: 50px;
+      img {
+        bottom: 130px;
+        height: 600px;
+      }
+    }
+    &-wrap {
+      height: 100px;
+    }
+    &-btn {
+      margin-top: 25px;
+    }
+  }
+  .footer {
+    &-item {
+      h2 {
+        text-align: center;
+      }
+    }
+    &-link {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .work {
+    &-title {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    &-subtitle {
+      text-align: center;
+    }
+    &-btn {
+      margin-top: 2rem;
+      margin-left: 25%;
+    }
+  }
+  .subscript {
+    padding-top: 3rem;
+    padding-bottom: 0;
+    &-item {
+      left: 0;
+      margin-bottom: 6rem;
+    }
+  }
+  .caption-btn {
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+    right: 3rem;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width:575px) {
+  .main {
+    &-link {
+      text-align: center;
+    }
+  }
+
+  .creative {
+    &-btn_t {
+      margin-top: 2rem;
+      margin-left: 16.666667%;
+    }
+    &-title {
+      font-size: 2.5rem;
+    }
+    &-subtitle {
+      font-size: 1.3rem;
+    }
+  }
+
+  .work {
+    &-btn {
+      margin-left: 16.666667%;
+    }
+    &-title {
+      font-size: 2.5rem;
+    }
+    &-subtitle {
+      font-size: 1.3rem;
+    }
+  }
+
+  .target {
+    &-btn {
+      margin-top: 2rem;
+      margin-left: 16.666667%;
+    }
+    &-title {
+      font-size: 2.5rem;
+    }
+    &-subtitle {
+      font-size: 1.3rem;
+    }
+  }
+
+  .subscript {
+    &-title {
+      font-size: 2.5rem;
+    }
+    &-subtitle {
+      font-size: 1.3rem;
+    }
+    &-item {
+      min-height: auto;
+      &_r,
+      &_l {
+        .subscript-btn {
+          width: 100%;
+          position: relative;
+          bottom: 0;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    &-value {
+      text-align: center;
+      width: 100%;
+      bottom: -5rem;
+    }
+  }
+  
+  .ipad {
+    &-base {
+      bottom: 100px;
+      height: 70px;
+    }
+    &-img {
+      height: 450px;
+      margin-bottom: 50px;
+      img {
+        bottom: 110px;
+        height: 400px;
+        width: 100%; 
+      }
+    }
+    &-wrap {
+      height: 100px;
+    }
+    &-btn {
+      margin-top: 25px;
+    }
+  }
+}
+
+@media (max-width:321px) {
+  .up {
+    height: 35px;
+    width: 35px;
+    right: 0.5rem;
+  }
+  .ipad {
+    &-base {
+      bottom: 100px;
+      height: 60px;
+    }
+    &-img {
+      height: 380px;
+      margin-bottom: 50px;
+      img {
+        bottom: 110px;
+        height: 320px;
+      }
+    }
+    &-wrap {
+      height: 100px;
+    }
+    &-btn {
+      margin-top: 25px;
+    }
+  }
+}
